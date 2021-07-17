@@ -5,6 +5,7 @@
 body {
     font-family: 'Jost', sans-serif;
     margin: 0;
+    /* overflow-x: hidden; */
 }
 
 :root {
@@ -200,7 +201,7 @@ a {
     top: 0;
     right: -7px;
     left: 0;
-    height: 640px;
+    height: 100%;
     border-radius: 15px;
     display: none;
 }
@@ -220,7 +221,7 @@ a {
     top: 0;
     right: -7px;
     left: 0;
-    height: 308px;
+    height: 100%;
     border-radius: 15px;
     display: none;
 }
@@ -240,7 +241,7 @@ a {
     top: 0;
     right: -7px;
     left: 0;
-    height: 308px;
+    height: 100%;
     border-radius: 15px;
     display: none;
 }
@@ -282,7 +283,7 @@ a {
     height: 594px;
     position: absolute;
     bottom: -295px;
-    left: 178px;
+    right: -215px;
     z-index: -1;
 }
 
@@ -359,6 +360,10 @@ a {
     margin-top: -70px;
     padding-top: 151px;
     padding-bottom: 72px;
+}
+
+.logoLine {
+    display: none;
 }
 
 .main-footer .row {
@@ -606,13 +611,55 @@ hr {
     THIRD PAGE 
     FIRST SECTION
 ***************************** */
-.location .maps {
-    text-align: end;
+.location {
+    margin-bottom: 32px;
 }
 
-.location .col-lg-7 {
-    background-image: url('../img/local\ section\ bg.png');
 
+.location .cityNames {
+    background-image: url('../img/local\ section\ bg.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.all-in-one a {
+    color: black;
+    font-size: 1.14rem;
+    display: block;
+}
+
+.all-in-one {
+    display: flex;
+}
+
+.all-in-one .address {
+    width: 270px;
+    padding-top: 24px;
+    padding-left: 95px;
+}
+
+.all-in-one .contact {
+    width: 270px;
+    padding-top: 24px;
+    padding-left: 95px;
+}
+
+.cityNames h1 {
+    padding-top: 88px;
+    padding-left: 95px;
+    color: #E7816B;
+    font-size: 2.85rem;
+    font-weight: 500;
+}
+
+.all-in-one span {
+    color: black;
+    font-size: 1.14rem;
+    font-weight: 500;
+}
+.location img {
+    width: 100%;
 }
 
 
@@ -677,7 +724,7 @@ hr {
 
 .buttonSubmit {
     margin-left: 205px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .btn-buttonSubmit {
@@ -699,7 +746,7 @@ hr {
     background-color: #FFAD9B;
 }
 
-.form-error {
+.form-error,.form-error2,.form-error3 {
     visibility: hidden;
     display: block;
     color: #fff;
@@ -713,4 +760,42 @@ hr {
 
 .yourName:focus~.form-error {
     visibility: visible;
+}
+
+.eMail:focus {
+    outline: none;
+    border-bottom: 2px solid #fff;
+}
+
+.eMail:focus~.form-error2 {
+    visibility: visible;
+}
+
+.yourNumber:focus {
+    outline: none;
+    border-bottom: 2px solid #fff;
+}
+
+.yourNumber:focus~.form-error3 {
+    visibility: visible;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 50%;
+}
+
+::-moz-placeholder {
+    color: #fff;
+    opacity: 50%;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+    opacity: 50%;
+}
+
+:-moz-placeholder {
+    color: #fff;
+    opacity: 50%;
 }
