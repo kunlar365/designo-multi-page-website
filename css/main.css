@@ -68,8 +68,14 @@ a {
 .main-nav-link {
     color: #333136;
     font-size: 1rem;
+    display: inline-block;
     position: relative;
 }
+
+.menu-toggle {
+    display: none;
+}
+
 
 .main-nav-link:hover {
     color: black;
